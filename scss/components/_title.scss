@@ -1,0 +1,25 @@
+$title-font-size-xl:               52px;
+$title-font-size-l:                40px;
+$title-font-size-m:                28px;
+$title-font-size-s:                22px;
+$title-color:                      #2d394c;
+$title-color-primary:              #5a626e;
+
+.title-h1 {
+    font-size: $title-font-size-xl;
+    text-transform: uppercase;
+    color: #f7f6f2;
+    text-align: center;
+}
+
+.title-h2 {
+    font-size: $title-font-size-l;
+    text-transform: uppercase;
+    color: $title-color;
+}
+
+@media (min-width: $breakpoint-large) {
+    .title-h1 {
+        text-align: left;
+    }
+}

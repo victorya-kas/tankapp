@@ -1,0 +1,22 @@
+
+.list-item {
+    padding-bottom: 55px;
+}
+.list-item-title {
+    display: flex;
+    align-items: center;
+    padding-bottom: 24px;
+}
+.list-icon {
+    position: relative;
+    margin-right: 25px;
+}
+
+.list-socials {
+    display: flex;
+    flex-wrap: wrap;
+    a {
+        padding: 10px 20px;
+        margin: 0 5px;
+    }
+}

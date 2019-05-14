@@ -1,0 +1,22 @@
+$text-font-size-s:         14px;
+$text-font-size-l:         24px;
+$text-color:               #9499a2;
+$text-color-primary:       #5a626e;
+
+.text {
+    font-size: $global-font-size;
+    color: $text-color;
+}
+
+.text-small {
+    font-size: $text-font-size-s;
+}
+
+.text-large {
+    font-size: $text-font-size-l;
+    color: $text-color-primary;
+}
+
+.text-white {
+    color: #fff;
+}

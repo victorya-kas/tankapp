@@ -1,0 +1,135 @@
+.row {
+    position: relative;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+}
+.row > * {
+    padding: 0 20px;
+}
+.row-foreground > * {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-top: 20px;
+}
+
+.row-foreground > .col-2-2 {
+    display: none;
+}
+
+.section-hero {
+    position: relative;
+    background-color: $global-color;
+    padding-top: 72px;
+}
+
+.hero-images > img {
+    height: 100%;
+    object-fit: contain;
+}
+.col-title {
+    padding-bottom: 42px;
+}
+.col-subtitle {
+    padding-bottom: 68px;
+}
+.section-overlay {
+    position: absolute;
+}
+
+.section-partners {
+    background-color: #f8f8f8;
+    padding: 57px 0;
+}
+
+.section-title {
+    text-align: center;
+}
+.section-why {
+    margin: 120px 0;
+}
+.section-title-why {
+    margin-bottom: 87px;
+}
+
+.section-why-img  {
+    margin-right: -70%; 
+    padding-top: 30px;
+}
+
+.section-different {
+    overflow: hidden;
+    position: relative;
+    padding: 140px 0;
+}
+.section-overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0px;
+    background: rgba($color: #f1f1f2, $alpha: 0.61);
+    z-index: -2;
+}
+.section-background {
+    position: absolute;
+    top: -20%;
+    bottom: 0;
+    right: -80%;
+    left: 0;
+    z-index: -1; 
+}
+.section-background > img {
+    height: 100%;
+    width: 100%;
+}
+
+.section-different-title {
+    padding-bottom: 140px;
+}
+.slide-title {
+    display: flex;
+    align-items: center;
+}
+.slide-icon {
+    margin-right: 30px;
+}
+
+.section-signup {
+    padding-top: 147px;
+    padding-bottom: 104px;
+}
+.section-signup-title {
+    padding-bottom: 48px;
+}
+.section-subtitle {
+    padding-bottom: 63px;
+    text-align: center;
+}
+.section-signup-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+@media (min-width: $breakpoint-large) {
+    .row-foreground > .col-1-2 {
+        align-items: flex-start;
+    }
+}
+
+@media (min-width: $breakpoint-medium) {
+    .section-why-img  {
+        padding-top: 0;
+    }
+}
+
+@media (min-width: $breakpoint-small) {
+    .row-foreground > .col-2-2 {
+        display: flex;
+    }
+}

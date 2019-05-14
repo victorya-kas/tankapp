@@ -1,0 +1,16 @@
+.footer {
+    padding: 56px 0;
+    background-color: #f1f1f2;
+    &-left {
+        display: flex;
+    }
+    &-right {
+        display: flex;
+        align-items: center;
+    }
+}
+.footer-body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  } 

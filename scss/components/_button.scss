@@ -1,0 +1,12 @@
+.button {
+    @include button ();
+    text-transform: uppercase;
+    border-radius: 5px;
+    border: none;
+    &-small {
+        @include button (5px 10px, $global-secondary-color);
+    }
+    &-large {
+        @include button (27px 57px);
+    }
+}

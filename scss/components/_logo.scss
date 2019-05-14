@@ -1,0 +1,16 @@
+.logo {
+    text-transform: uppercase;
+    text-shadow: 1px 0 0 rgba(0, 0, 0, 0.06);
+    color: #333333;
+    font-size: 37px;
+    padding-right: 15px;
+ &-color {
+    color: #65a9d9;
+   }
+   &-footer {
+      opacity: 0.4;
+   }
+   &-footer-color {
+      color: #4d5664;
+   }
+}

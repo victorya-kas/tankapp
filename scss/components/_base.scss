@@ -1,0 +1,53 @@
+$container-max-width:       1275px;
+$container-min-width:       320px;
+$container-padding:         0 15px;
+
+html {
+  box-sizing: border-box;
+  min-width: 100%;
+}
+body > * {
+  font-family: $global-font-family;
+}
+body{
+  background-color: #fff;
+}
+body, h1, h2, h3, h4, h5, img, ul, ol, li, a, p {
+  margin: 0;
+  padding: 0; 
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+*,
+*:after,
+*:before {
+  box-sizing: inherit;
+}
+img {
+  object-fit: cover;
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+.wrapper {
+  overflow: hidden;
+  position: relative;
+}
+.clearfix:before,
+.clearfix:after {
+  content: '';
+  display: table; 
+}
+
+.clearfix:after {
+  clear: both; 
+}
+
+.container {
+  max-width: $container-max-width;
+  min-width:$container-min-width;
+  margin:0 auto;
+  padding: $container-padding;
+}
