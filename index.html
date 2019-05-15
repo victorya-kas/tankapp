@@ -4,6 +4,7 @@
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>Document</title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/css/swiper.min.css">
 	<link rel="stylesheet" type="text/css" href="style.css">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
@@ -32,21 +33,24 @@
 									<a class="nav-link">Blog</a>
 								</li>
 							</ul>
-							<div class="navbar-toggle"></div>
-							<ul class="navbar-mobile">
-								<li class="nav-item">
-									<a class="nav-link">How it works </a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link">About Us</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link">Contact Us</a>
-								</li>
-								<li class="nav-item">
-									<a class="nav-link">Blog</a>
-								</li>
-							</ul>
+							<div class="navbar-mobile">
+								<div id="burger" class="icon-list2" onclick="burger()"></div>
+								<div id="quit" class="icon-cross" onclick="quit()"></div>
+								<ul id="menu" class="navbar-menu">
+									<li class="nav-item">
+										<a class="nav-link">How it works </a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link">About Us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link">Contact Us</a>
+									</li>
+									<li class="nav-item">
+										<a class="nav-link">Blog</a>
+									</li>
+								</ul>
+							</div>
 						</nav>
 					</div>
 				</div>
@@ -208,18 +212,72 @@
 					<div class="section-title section-different-title">
 						<h2 class="title title-h2">WHY TANK APP DIFFRENT ?</h2>
 					</div>
-					<div class="section-body width-1-2">
-							<div class="slide-title">
-								<div class="slide-icon icon">
-										<span class="icon-cloud icon-el"></span>
-										<span class="icon-cloud icon-el-bg icon-el-bg-dark"></span>
+					<div class="swiper-container">
+							<div class="swiper-wrapper">
+								<div class="swiper-slide">
+									<div class="section-body width-1-2">
+											<div class="slide-title">
+												<div class="slide-icon icon">
+														<span class="icon-cloud icon-el"></span>
+														<span class="icon-cloud icon-el-bg icon-el-bg-dark"></span>
+												</div>
+												<h3 class="title-h3">Works on any device anyware</h3>
+											</div>
+											<div class="slide-desc">
+												<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+											</div>
+									</div>
 								</div>
-								<h3 class="title-h3">Works on any device anyware</h3>
+								<div class="swiper-slide">
+									<div class="section-body width-1-2">
+											<div class="slide-title">
+												<div class="slide-icon icon">
+														<span class="icon-cloud icon-el"></span>
+														<span class="icon-cloud icon-el-bg icon-el-bg-dark"></span>
+												</div>
+												<h3 class="title-h3">Works on any device anyware</h3>
+											</div>
+											<div class="slide-desc">
+												<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+											</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="section-body width-1-2">
+											<div class="slide-title">
+												<div class="slide-icon icon">
+														<span class="icon-cloud icon-el"></span>
+														<span class="icon-cloud icon-el-bg icon-el-bg-dark"></span>
+												</div>
+												<h3 class="title-h3">Works on any device anyware</h3>
+											</div>
+											<div class="slide-desc">
+												<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+											</div>
+									</div>
+								</div>
+								<div class="swiper-slide">
+									<div class="section-body width-1-2">
+											<div class="slide-title">
+												<div class="slide-icon icon">
+														<span class="icon-cloud icon-el"></span>
+														<span class="icon-cloud icon-el-bg icon-el-bg-dark"></span>
+												</div>
+												<h3 class="title-h3">Works on any device anyware</h3>
+											</div>
+											<div class="slide-desc">
+												<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+											</div>
+									</div>
+								</div>
 							</div>
-							<div class="slide-desc">
-								<p class="text">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea com Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut</p>
+							<div class="swiper-pagination">
+								<div class="swiper-pagination-bullet">1</div>
+								<div class="swiper-pagination-bullet">2</div>
+								<div class="swiper-pagination-bullet">3</div>
+								<div class="swiper-pagination-bullet">4</div>
 							</div>
-					</div>	
+						</div>	
 				</div>
 			</section>
 			<section class="section section-signup">
@@ -280,5 +338,7 @@
 			</div>
 		</footer>
 	</div>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.0/js/swiper.min.js"></script>
+	<script src="js/main.js"></script>
 </body>
 </html>

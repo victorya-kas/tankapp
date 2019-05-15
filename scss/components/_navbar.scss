@@ -47,25 +47,72 @@ $navbar-hover-background:   $global-secondary-color;
       }
     }
   }
-  
-  &-toggle{
-    display: block;  
+}
+
+#burger{
+  display: block;
+}
+.navbar-mobile {
+  display: block;
+}
+
+#burger {
+  position: absolute;
+  right: 0;
+  top: 0;
+  z-index: 2;
+  color: white;
+  background: linear-gradient(45deg, $global-primary-background 10%, $global-color);;
+  font-size: 32px;
+  padding: 16px 16px 32px 32px;
+  border-radius: 0% 0% 0% 100%;
+  transition: 1s;
+  cursor: pointer;
+}
+
+#quit{
+  position: absolute;
+  z-index: 3;
+  top: 0;
+  left: 0;
+  color: white;
+  font-size: 32px;
+  padding: 16px;
+  display: none;
+  cursor: pointer;
+}
+
+#menu {
+  display: none;
+  position: absolute;
+  left: 50%;
+  z-index: 9;
+  flex-direction: column;
+  li {
+  padding: 10px 15px;
+  a {
+    display: inline-block;
+    padding: $navbar-padding;
+    color: white;
+    font-size: 2em;
+    text-decoration: uppercase;
+    &:hover {
+      border-radius: 5px;
+      background: $navbar-hover-background;
+    }
   }
-  &-mobile {
-    display: block;
   }
+}
 
 
-  @media (min-width: $breakpoint-medium){
-    &-nav {
+@media (min-width: $breakpoint-medium){
+    .navbar-nav {
       display: flex;  
     }
-    &-toggle{
+    #burger{
       display: none;  
     }
-    &-mobile {
+    .navbar-mobile {
       display: none;
     }
   }
-
-}

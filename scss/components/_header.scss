@@ -1,4 +1,6 @@
-.header-body {
+.header {  
+  padding: 38px 0;
+  &-body {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -6,3 +8,10 @@
       display: flex;
     }
   } 
+}
+
+@media (min-widht: $breakpoint-medium) {
+  .header {
+    padding: 0;
+  }
+}
