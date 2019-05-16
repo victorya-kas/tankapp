@@ -11,6 +11,13 @@
         color: #4d5664;
         opacity: 0.4;
     }
+
+    &-logo-footer {
+        font-size: 27px;
+        @media (min-width: $breakpoint-xsmall) {
+            font-size: 37px;
+        }
+    }
 }
 .icon-el {
     position: absolute;

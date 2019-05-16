@@ -9,6 +9,10 @@
    }
    &-footer {
       opacity: 0.4;
+      font-size: 27px;
+      @media (min-width: $breakpoint-xsmall) {
+         font-size: 37px;
+      }
    }
    &-footer-color {
       color: #4d5664;

@@ -8,14 +8,10 @@ $navbar-border:             1px solid transparent;
 $navbar-hover-background:   $global-secondary-color;    
 
 .navbar {
-  display: none;
+
   flex-wrap: wrap;
   border-right: 1px solid rgba($color: #333333, $alpha: 0.5);
   font-size: 12px;
-
-  @media (min-width: $breakpoint-xsmall) {
-    display: flex;
-  }
 
   .nav-item {
     margin: 0 2px;
@@ -51,24 +47,6 @@ $navbar-hover-background:   $global-secondary-color;
         }
       }
     }
-  }
-}
-
-.navbar-footer {
-  display: flex;
-  flex-wrap: wrap;
-  .nav-link {
-    padding: 10px 15px;
-    color: $navbar-color-primary;
-    border-radius: 5px;
-    font-size: 14px;
-
-    &:hover {
-      background-color: $global-secondary-color;
-  }
-}
-  @media (min-width: $breakpoint-xsmall) {
-    display: none;
   }
 }
 
