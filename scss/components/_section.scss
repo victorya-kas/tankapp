@@ -75,12 +75,17 @@
     z-index: -2;
 }
 .section-background {
+    display: none;
     position: absolute;
     top: -20%;
     bottom: 0;
     right: -80%;
     left: 0;
     z-index: -1; 
+
+    @media (min-width: $breakpoint-medium) {
+        display: block;
+    }
 }
 .section-background > img {
     height: 100%;
@@ -88,7 +93,10 @@
 }
 
 .section-different-title {
-    padding-bottom: 140px;
+    padding-bottom: 70px;
+    @media (min-width: $breakpoint-medium) {
+        padding-bottom: 140px;
+    }
 }
 .slide-title {
     display: flex;

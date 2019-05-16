@@ -18,5 +18,8 @@
     a {
         padding: 10px 20px;
         margin: 0 5px;
+        &:hover {
+            color: $global-secondary-color;
+        }
     }
 }

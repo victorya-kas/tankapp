@@ -8,14 +8,19 @@ $navbar-border:             1px solid transparent;
 $navbar-hover-background:   $global-secondary-color;    
 
 .navbar {
-  display: flex;
+  display: none;
   flex-wrap: wrap;
   border-right: 1px solid rgba($color: #333333, $alpha: 0.5);
+  font-size: 12px;
 
-  li {
+  @media (min-width: $breakpoint-xsmall) {
+    display: flex;
+  }
+
+  .nav-item {
     margin: 0 2px;
 
-    a {
+    .nav-link {
       padding: 10px 15px;
       color: $navbar-color-primary;
       border-radius: 5px;
@@ -30,9 +35,9 @@ $navbar-hover-background:   $global-secondary-color;
     display: none;
     margin:0 -15px;
     list-style: none;
-    li {
+    .nav-item {
       padding: 15px;
-      a {
+      .nav-link {
         display: inline-block;
         padding: $navbar-padding;
         border: $navbar-border;
@@ -46,6 +51,24 @@ $navbar-hover-background:   $global-secondary-color;
         }
       }
     }
+  }
+}
+
+.navbar-footer {
+  display: flex;
+  flex-wrap: wrap;
+  .nav-link {
+    padding: 10px 15px;
+    color: $navbar-color-primary;
+    border-radius: 5px;
+    font-size: 14px;
+
+    &:hover {
+      background-color: $global-secondary-color;
+  }
+}
+  @media (min-width: $breakpoint-xsmall) {
+    display: none;
   }
 }
 
@@ -88,9 +111,9 @@ $navbar-hover-background:   $global-secondary-color;
   left: 50%;
   z-index: 9;
   flex-direction: column;
-  li {
+  .nav-item {
   padding: 10px 15px;
-  a {
+  .nav-link {
     display: inline-block;
     padding: $navbar-padding;
     color: white;
